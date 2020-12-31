@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="firestoredb", # Replace with your own username
-    version="0.0.1",
+    version="0.1.0",
     author="Sarmad Gulzar",
     author_email="sarmadgulzar@hotmail.com",
     description="Firestore wrapper for Python",
@@ -18,5 +18,6 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
+    install_requires=["google-cloud-firestore==2.0.2"]
     python_requires='>=3.6',
 )
