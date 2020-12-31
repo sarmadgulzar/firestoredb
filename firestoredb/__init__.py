@@ -5,8 +5,8 @@ except ImportError:
         "Please ensure google-cloud-firestore version 2.0.2 is installed."
     )
 
-from models import Collection, Document, SubCollection
-from types import (
+from .models import Collection, Document, SubCollection
+from .types import (
     Array,
     Boolean,
     GeoPoint,

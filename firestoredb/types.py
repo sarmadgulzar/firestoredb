@@ -27,7 +27,11 @@ class Reference:
 
 
 class String:
-    pass
+    def __init__(self, value):
+        if isinstance(value, str):
+            self.value = value
+        else:
+            raise TypeError("Value must be a string")
 
 
 class Timestamp:
