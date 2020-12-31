@@ -19,7 +19,11 @@ class Null:
 
 
 class Number:
-    pass
+    def __init__(self, value):
+        if isinstance(value, (int, float)):
+            self.value = value
+        else:
+            raise TypeError("Value must be an integer or a float")
 
 
 class Reference:
